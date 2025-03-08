@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Document</title>
   </head>
   <body>
-    {% extends "includes/navbar.html" %} {% block content %}
-    <h1>Esta es mi website</h1>
-    <h2>Sean bienvenidos</h2>
-    <p>Mi pagina trata sobre un safari</p>
+    <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'about' %}">About</a>
-    {% endblock %}
+    {% block content %} {% endblock %}
   </body>
 </html>
